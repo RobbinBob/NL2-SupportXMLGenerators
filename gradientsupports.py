@@ -1,5 +1,4 @@
 import math
-from tkinter.tix import MAX
 from turtle import color
 import xml.etree.ElementTree as ET
 import SupportGen as SG
