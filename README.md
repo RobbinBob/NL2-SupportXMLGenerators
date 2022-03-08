@@ -2,8 +2,8 @@
 Some handy generators which make use of the support xml import for nl2 
 
 ## How to use
-1. First download the zip file and extract it somewhere where you will remember it
-2. Run the 'gradientsupport.py', a dialogue box should appear
+1. First download the latest release and save it somewhere where you will remember it
+2. Run the exe file, a dialogue box should appear
 3. Follow the instructions in the box and customise any of the parameters
 4. Once it is complete it will generate a file 'gradient.xml'
 5. Now you can import it into NoLimits2 using the support xml import option
