@@ -27,6 +27,8 @@ ehthumbs.db
 Thumbs.db
 .vscode
 
+*.afdesign
+
 *.log
 *.sql
 *.sqlite
