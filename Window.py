@@ -1,8 +1,8 @@
 #import tkinter
 from tkinter import *
 from tkinter import ttk
-from tokenize import String
-from turtle import st # Newer widgets
+import sys
+import os
 
 #------------------FUNCTIONS------------------
 def updateChoice(*args):
@@ -16,6 +16,13 @@ def updateChoice(*args):
     else:
         print("Gradient idek how you got this")
 
+def resource_path(relative_path):
+    """ Get absolute path to resource, works for dev and for PyInstaller """
+    base_path = getattr(sys, '_MEIPASS', os.path.dirname(os.path.abspath(__file__)))
+    return os.path.join(base_path, relative_path)
+#--------------------DIR----------------------
+theme_dir = resource_path('themes')
+
 #-------------------WINDOW--------------------
 root = Tk()
 root.title('Gradient Support Designer')
@@ -28,7 +35,7 @@ root.columnconfigure(0, weight=1)
 root.rowconfigure(0, weight=1)
 
 ##  Apply dark theme to window
-root.tk.call('source', 'Azure-ttk-theme-2.1.0/azure.tcl')
+root.tk.call('source', os.path.join(theme_dir, 'azure.tcl'))
 root.tk.call('set_theme', 'dark')
 
 s = ttk.Style()
